@@ -1,0 +1,36 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find \"D:/React/AI-Smart-Expense-Tracker/frontend/src/pages\" -name \"*.js\" -exec grep -l \"function\\\\|export\" {} ;)",
+      "Bash(python -c \"from agents import AgentOrchestrator; print\\(''Agent imports OK''\\); from app import app; print\\(''App imports OK''\\)\")",
+      "Bash(./venv/Scripts/python -c \"import sys; sys.path.insert\\(0, ''backend''\\); from agents import AgentOrchestrator; print\\(''Agents OK''\\); from app import app; print\\(''App OK''\\)\")",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(npm --version)",
+      "Bash(where npm.cmd)",
+      "Bash(npx --version)",
+      "Bash(node --version)",
+      "Bash(python -c \":*)",
+      "Bash(pip show werkzeug)",
+      "Bash(ls /d/React/AI-Smart-Expense-Tracker/backend/venv/Scripts/python*)",
+      "Bash(ls /d/React/AI-Smart-Expense-Tracker/backend/.venv/Scripts/python*)",
+      "Bash(ls /d/React/AI-Smart-Expense-Tracker/venv/Scripts/python*)",
+      "Bash(/d/React/AI-Smart-Expense-Tracker/venv/Scripts/python.exe -c \":*)",
+      "Bash(npx --no-install react-scripts build)",
+      "Bash(pip install python-docx)",
+      "Bash(python generate_report.py)",
+      "Bash(netstat -ano)",
+      "Bash(findstr \":5000\")",
+      "Bash(findstr \"LISTENING\")",
+      "Bash(findstr \":3000\")",
+      "Bash(taskkill //PID 34664 //F)",
+      "Bash(powershell -Command \"Stop-Process -Id 34664 -Force -ErrorAction SilentlyContinue\")",
+      "Bash(powershell -Command \"Get-Process -Id 34664 -ErrorAction SilentlyContinue | Select-Object Id, ProcessName, Path\")",
+      "Bash(powershell -Command \"Get-NetTCPConnection -LocalPort 5000 -ErrorAction SilentlyContinue | Select-Object LocalPort, OwningProcess, State\")",
+      "Bash(powershell -Command \"Get-CimInstance Win32_Process -Filter ''ProcessId = 34664'' -ErrorAction SilentlyContinue | Select-Object ProcessId, Name, CommandLine\")",
+      "Bash(powershell -Command \"Stop-Process -Id 34664 -Force\")",
+      "Bash(powershell -Command \"\\(Get-NetTCPConnection -LocalPort 5000 -ErrorAction SilentlyContinue\\).OwningProcess\")",
+      "Bash(powershell -Command \"Get-NetTCPConnection -LocalPort 5000 -ErrorAction SilentlyContinue | Select-Object LocalAddress,LocalPort,RemoteAddress,RemotePort,State,OwningProcess\")",
+      "Bash(powershell -Command \"Select-String -Path ''D:/React/AI-Smart-Expense-Tracker/backend/app.py'' -Pattern ''5000|port'' | Select-Object LineNumber, Line\")"
+    ]
+  }
+}
